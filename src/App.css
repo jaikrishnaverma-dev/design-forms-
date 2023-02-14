@@ -1,0 +1,144 @@
+body{
+  background-color: aliceblue;
+}
+.t1{
+  border:1px solid red;
+}
+.t2{
+  border:1px solid blue;
+}
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.w100{
+  width: 100%;
+}
+.row{
+display: flex;
+}
+.col{
+  display: flex;
+  flex-direction: column;
+}
+.flexAIC{
+  align-items: center;
+}
+.flexJCC{
+  justify-content: center;
+}
+.flexBetween{
+  justify-content: space-between;
+}
+.flexAround{
+  justify-content: space-around;
+}
+.p-10{
+  padding: 10px;
+}
+.p-10{
+  padding: 10px;
+}
+.m5{
+  margin: 5px;
+}
+.flexWrap{
+  flex-wrap: wrap;
+}
+.col-20{
+  width:20%
+}
+.col-80{
+  width: 80%;
+}
+.col-30{
+  width: 30%;
+}
+.col-60{
+  width: 60%;
+}
+.col-40{
+  width: 40%;
+}
+.col-50{
+  width: calc(50% - 10px);
+}
+.mb-20{
+  margin-bottom: 20px;
+}
+.mb-15{
+  margin-bottom: 15px;
+}
+.text-bold{
+font-weight: 500;
+}
+
+.card{
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+.link{
+  color: rgb(0, 81, 255);
+font-size: 15px;
+margin-top: -10px;
+}
+/* end of universal css for reusability*/
+
+.inpudiv{
+position: relative;
+}
+.inpudiv input{
+border: 1px solid rgba(128, 128, 128, 0.781);
+font-size: 18px;
+padding: 7px 10px;
+border-radius: 5px;
+width: 100%;
+}
+.inpudiv span{
+position: absolute;
+top:-10px;
+left:10px;
+font-size: 14px;
+background-color: white;
+color: rgb(109, 109, 109);
+padding: 0px 8px;
+}
+
+.container{
+max-width: 1000px;
+margin-left: auto;
+margin-right: auto;
+padding: 10px;
+}
+
+.text-grey{
+  color: rgb(97, 97, 97);
+}
+.card--pay{
+  box-shadow: rgba(0, 110, 255, 0) 0px 6px 24px 0px, rgb(0, 110, 255) 0px 0px 0px 1px;
+background-color: rgba(0, 110, 255, 0.185);
+};
+
+.card--span{
+  background-color: rgba(0, 110, 255, 0.185) !important;
+}
+.card--details{
+  margin:20px 0px;
+}
+
+
+/* hide scroll */
+::-webkit-scrollbar {
+  width: 1px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
