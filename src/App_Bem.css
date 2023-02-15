@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: #e5e5e5;
+}
+
+.container {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #f6f6f6;
+}
+
+.header {
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center
+}
+
+.header__logo {
+  width: 130px;
+}
+
+.main {
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.inputsection {
+  padding: 10px;
+  width: 60%;
+  padding: 10px;
+}
+
+.deatils {
+  padding: 10px;
+  width: 40%;
+}
+
+.card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.card__head {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.card__body {
+  justify-content: space-between;
+}
+
+.inpudiv {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.inpudiv__input {
+  border: 1px solid rgba(128, 128, 128, 0.781);
+  font-size: 18px;
+  padding: 7px 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.inpudiv__span {
+  position: absolute;
+  top: -10px;
+  left: 10px;
+  font-size: 14px;
+  background-color: white;
+  color: rgb(109, 109, 109);
+  padding: 0px 8px;
+}
+
+.card__accept {
+  width: 100%;
+  align-items: center;
+}
+
+.card--active {
+  box-shadow: rgba(0, 110, 255, 0) 0px 6px 24px 0px, rgb(0, 110, 255) 0px 0px 0px 1px;
+  background-color: rgba(0, 110, 255, 0.185);
+}
+
+.card--details {
+  margin: 20px 0px;
+}
+
+.card--active .card--details .inpudiv .inpudiv__span,
+.card--active .card--details .inpudiv .inpudiv__input {
+  background-color: #d0e4ff
+}
+
+.card--paywith {
+  min-width: 175px;
+  align-items: center;
+}
+
+.input--enable,
+.shipping__input,
+.payment__input {
+  margin: 5px;
+  width: 20px;
+}
+
+.card--shipping,
+.card--payment {
+  padding: 10px;
+  margin-bottom: 15px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.shipping__details,
+.payment__details {
+  width: 20%;
+  align-items: center;
+}
+
+.shipping__descriptions__box,
+.shipping__payment__box {
+  width: 76%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shipping__descriptions,
+.payments__descriptions {
+  font-size: 15px;
+}
+
+.shipping__images,
+.payment__images {
+  margin: 0px 10px;
+}
+
+.card--pay {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.paywith {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.paywith__types {
+  justify-content: space-between;
+}
+
+.paywith__images {
+  margin: 0px 10px;
+}
+
+.paywith__inputs {
+  flex-wrap: wrap;
+}
+
+.inpudiv--paywith {
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.footbox {
+  align-items: center;
+  justify-content: center;
+}
+
+.footbox__image {
+  margin: 5px;
+  font-size: 12px;
+}
+
+.billing__list,
+.totalbox__li {
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.totalbox {
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+}
+
+.inpudiv--comment {
+  margin: 5px;
+  margin-bottom: 20px;
+}
+
+.payButton {
+  border-radius: 8px;
+  background: linear-gradient(137.27deg, #2F88FF 19.41%, #1D68CD 65.49%);
+  border: 0px;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  margin: 20px 0px;
+  box-shadow: 0px 4px 4px 0px #0E35BF40;
+
+}
+
+
+/* Universal %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%*/
+.row {
+  display: flex;
+}
+
+.col {
+  flex-direction: column;
+}
+
+.w100 {
+  width: 100%;
+}
+
+.text-bold {
+  font-weight: 500;
+}
+
+.col-50 {
+  width: calc(50% - 10px);
+}
+
+.flexWrap {
+  flex-wrap: wrap;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.m5 {
+  margin: 5px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-15 {
+  margin-bottom: 15px;
+}
+
+.link {
+  color: rgb(0, 81, 255);
+  font-size: 15px;
+  margin-top: -10px;
+}
+
+.text-grey {
+  color: rgb(97, 97, 97);
+}
+
+
+/* If the screen size is 600px wide or less, hide the element */
+@media only screen and (max-width: 840px) {
+  .sm-100 {
+    width: 100%;
+    min-width: 360px;
+    max-width: 500px;
+  }
+
+  header p {
+    font-size: 12px;
+  }
+
+  .shipping__descriptions,
+  .payments__descriptions,
+  .footbox__para {
+    font-size: 11px;
+    font-family: 800;
+    line-height: 1.4;
+    padding-left: 8px;
+  }
+
+  .card__accept__description {
+    font-size: 13px;
+  }
+}
+
+/* hide scroll */
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}

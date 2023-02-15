@@ -3,11 +3,10 @@ import React from 'react'
 
 const Head = () => {
   return (
-    <section className="head w100 row flexBetween p-10">
-        <img src="Logo.png" style={{width:'130px'}} alt="" />
-        <p>Already have an account?<a href='#'> Sing In</a> </p>
-    </section>
-
+    <header className="header w100 row">
+        <img src="Logo.png" className='header__logo' alt="" />
+        <p className='header_notice'>Already have an account?<a href='#'> Sing In</a> </p>
+    </header>
   )
 }
 
